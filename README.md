@@ -1,142 +1,159 @@
 # TaskManager
 
-Description
+TaskManager is a Laravel application for managing tasks, built with a modern
+React and Inertia.js frontend. It includes a dashboard, authentication,
+profile settings, and account security features.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png" alt="Clapper Board" width="25" height="25" /> Project Showcase Video <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Movie%20Camera.png" alt="Movie Camera" width="25" height="25" />
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Film%20Frames.png" alt="Film Frames" width="25" height="25" /> [Watch on LinkedIn]()  
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Film%20Frames.png" alt="Film Frames" width="25" height="25" /> [Watch on YouTube]()
 
-
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="25" height="25" /> Features
 
-- **Survival Prediction**: A Random Forest model predicts survival based on passenger features (e.g., Age, Gender, Pclass, Embarked).
-- **Interactive 3D Visualization**: A `.glb` model of the Titanic, rendered with Three.js, supports camera rotation.
-- **Web Interface**: Users can input passenger details via a web form and view survival predictions in real-time.
-- **Accuracy**: Achieves ~80% accuracy on the test dataset.
+- **Task Management Foundation**: A Laravel application structured for
+  building task workflows and a user dashboard.
+- **Modern Web Interface**: React and Inertia.js provide a responsive
+  single-page application experience without a separate API.
+- **Authentication**: Registration, login, logout, email verification, and
+  password reset flows powered by Laravel Fortify.
+- **Account Settings**: Profile editing, password changes, and appearance
+  preferences for authenticated users.
+- **Security**: Two-factor authentication, passkeys, password confirmation,
+  and rate-limited authentication actions.
+- **Developer Experience**: TypeScript, Tailwind CSS, reusable UI components,
+  automated tests, linting, and static analysis.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" alt="Gear" width="25" height="25" /> Tech Stack
 
 <table align="center" style="width:100%; border-collapse: collapse; text-align: center;">
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Window.png" alt="Window" width="25" height="25" /> FontEnd</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/X-Ray.png" alt="X-Ray" width="25" height="25" /> BackEnd</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Mechanical%20Arm.png" alt="Mechanical Arm" width="25" height="25" /> Machine Learning</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="25" height="25" /> Data Analysis</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Window.png" alt="Window" width="25" height="25" /> Frontend</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/X-Ray.png" alt="X-Ray" width="25" height="25" /> Backend</td>
+    <td align="center">    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" alt="Locked with Key" width="25" height="25" />Authentication</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="25" height="25" /> Quality</td>
   </tr>
   <tr>
     <td align="center"><img src="https://skillicons.dev/icons?i=react" align="center"><br/>+<br/><img src="https://skillicons.dev/icons?i=tailwind" align="center"></td>
-    <td align="center"><img src="https://skillicons.dev/icons?i=php" align="center"><br/>+<br/><img src="https://skillicons.dev/icons?i=laravel" align="center"></td></td>
-    <td align="center">
-      <img width="80" src="https://github.com/user-attachments/assets/3865d31c-9d7c-469f-a0d0-d85f40e56127" alt="XGBoost" title="XGBoost"/>
-      <br/>
-      <img src="https://skillicons.dev/icons?i=sklearn" align="center">
-    </td>
-    <td align="center">
-       <img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" title="Python"/>
-      <img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/numpy.png" alt="NumPy" title="NumPy"/>
-      <img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/pandas.png" alt="Pandas" title="Pandas"/>
-    </td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=php" align="center"><br/>+<br/><img src="https://skillicons.dev/icons?i=laravel" align="center"></td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=laravel" align="center"><br/>Fortify + Passkeys</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=php,typescript" align="center"><br/>PHPUnit + Larastan</td>
   </tr>
 </table>
 
-
-- **Backend**: Flask (web server), scikit-learn (machine learning)
-- **Frontend**: HTML, CSS, JavaScript, Three.js (3D rendering)
-- **Machine Learning**: Random Forest Classifier (primary), Logistic Regression (baseline), explored XGBoost
-- **Data**: Titanic dataset (`train.csv`, `test.csv`, `gender_submission.csv`)
-- **Model Storage**: Pickle file (`titanic_model.pkl`)
+- **Backend**: PHP 8.3+ and Laravel 13
+- **Frontend**: React 19, TypeScript, Inertia.js, and Vite Plus
+- **Styling**: Tailwind CSS 4 and Radix UI
+- **Authentication**: Laravel Fortify with two-factor authentication and
+  passkeys
+- **Database**: SQLite by default, with Laravel migrations
+- **Testing**: PHPUnit, Laravel Pint, and Larastan
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/File%20Folder.png" alt="File Folder" width="25" height="25" /> Project Structure
 
-```
-CodeAlpha_Titanic_Classification/
-├── data/
-│   ├── gender_submission.csv
-│   ├── test.csv
-│   └── train.csv
-├── model/
-│   └── titanic_model.pkl
-├── backend/
-│   ├── app.py              # Flask backend
-│   ├── utils.py            # Prediction logic
-│   ├── static/
-│   │   ├── models/        # 3D model (.glb)
-│   │   ├── style.css      # Frontend styling
-│   │   └── script.js      # Frontend logic and Three.js
-│   └── templates/
-│       └── index.html     # Web interface
-├── notebooks/
-│   └── titanic_analysis.ipynb  # Data preprocessing and model training
-├── README.md
-├── requirements.txt
-└── .gitignore
+```text
+TaskManager/
+├── app/
+│   ├── Actions/Fortify/       # Authentication actions
+│   ├── Http/                  # Controllers, middleware, and requests
+│   ├── Models/                # Eloquent models
+│   └── Providers/             # Application and Fortify configuration
+├── database/
+│   ├── factories/             # Model factories
+│   ├── migrations/            # Database schema
+│   └── seeders/               # Database seeders
+├── resources/
+│   ├── css/                   # Application styles
+│   ├── js/                    # React components, layouts, and pages
+│   └── views/                 # Blade views
+├── routes/                    # Web, settings, and console routes
+├── tests/                     # Feature and unit tests
+├── composer.json              # PHP dependencies and scripts
+└── package.json               # JavaScript dependencies and scripts
 ```
 
 ## Setup Instructions
 
 1. **Clone the Repository**:
+
    ```bash
    git clone <repository-url>
-   cd CodeAlpha_Titanic_Classification
+   cd TaskManager
    ```
 
-2. **Install Dependencies**:
-   Ensure Python 3.8+ is installed. Then, install required packages:
+2. **Install Dependencies and Configure the Application**:
+
    ```bash
-   pip install -r requirements.txt
+   composer run setup
    ```
 
-3. **Prepare the Dataset**:
-   Place `train.csv`, `test.csv`, and `gender_submission.csv` in the `data/` folder. These can be sourced from Kaggle's Titanic dataset.
+   This installs PHP and JavaScript dependencies, creates `.env`, generates
+   the application key, runs migrations, and builds the frontend assets.
 
-4. **Train the Model** (optional):
-   Run `titanic_analysis.ipynb` to preprocess data and train the Random Forest model. The trained model is saved as `model/titanic_model.pkl`.
+3. **Run the Development Environment**:
 
-5. **Run the Application**:
-   Start the Flask server:
    ```bash
-   python backend/app.py
+   composer run dev
    ```
-   Access the web interface at `http://localhost:5000`.
 
-6. **Interact with the App**:
-   - Enter passenger details (e.g., Pclass, Sex, Age, SibSp, Parch, Fare, Embarked) in the web form.
-   - View the survival prediction and probability.
-   - Explore the interactive 3D Titanic model with camera rotation.
+   Access the application at `http://localhost:8000`.
 
-## Machine Learning Workflow
+### Manual setup
 
-1. **Data Cleaning**:
-   - Filled missing `Age` values with the median.
-   - Filled missing `Embarked` values with the mode.
-2. **Feature Encoding**:
-   - `Sex`: male=1, female=0
-   - `Embarked`: C=0, Q=1, S=2
-3. **Model Training**:
-   - Used Random Forest Classifier (`n_estimators=100`, `random_state=42`).
-   - Features: Pclass, Sex, Age, SibSp, Parch, Fare, Embarked.
-4. **Evaluation**:
-   - Achieved ~80% accuracy on the test set.
+```bash
+composer install
+copy .env.example .env
+php artisan key:generate
+php artisan migrate
+npm install
+npm run build
+```
 
-## Usage
+On macOS or Linux, use `cp .env.example .env` instead of the Windows `copy`
+command.
 
-- **Prediction**: Submit passenger data via the web interface to get survival predictions.
-- **Visualization**: Rotate and explore the 3D Titanic model using mouse controls.
-- **Exploration**: Review `titanic_analysis.ipynb` for detailed data analysis and model training steps.
+## Development Commands
+
+```bash
+# Start the Laravel development environment
+composer run dev
+
+# Start only the frontend development server
+npm run dev
+
+# Build frontend assets
+npm run build
+
+# Run the complete test and quality suite
+composer run test
+
+# Run frontend checks and type checking
+npm run check
+npm run types:check
+```
+
+## Authentication and Account Settings
+
+Laravel Fortify provides the authentication flows and rate limiting. The
+application includes:
+
+- Registration, login, logout, and email verification
+- Password reset and password confirmation
+- Two-factor authentication
+- Passkey enrollment and management
+- Profile, password, and appearance settings
+
+Protected routes include `/dashboard`, `/settings/profile`,
+`/settings/security`, and `/settings/appearance`.
 
 ## Future Improvements
 
-- Enhance preprocessing with feature engineering (e.g., family size).
-- Tune model hyperparameters or compare additional algorithms (e.g., XGBoost).
-- Improve the frontend UI with better styling and interactivity.
-- Add input validation and detailed error messages.
-- Deploy the app using Docker or a cloud platform like Heroku.
+- Add task creation, assignment, status, and due-date workflows.
+- Add task filtering, search, labels, and team collaboration.
+- Add notifications and activity history.
+- Expand dashboard reporting and productivity insights.
+- Add deployment documentation for production environments.
 
-## Acknowledgments
+## License
 
-- Built as part of the CodeAlpha Internship.
-- Dataset sourced from Kaggle's Titanic competition.
-- 3D model rendering powered by Three.js.
-
-Feel free to explore the code, contribute, or reach out for questions!
+This project is open-sourced under the [MIT license](https://opensource.org/licenses/MIT).
