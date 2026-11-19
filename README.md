@@ -98,7 +98,7 @@ TaskManager/
 
    Access the application at `http://localhost:8000`.
 
-### Manual setup
+### Manual setup with XAMPP (MySQL)
 
 ```bash
 composer install
@@ -111,6 +111,46 @@ npm run build
 
 On macOS or Linux, use `cp .env.example .env` instead of the Windows `copy`
 command.
+
+#### Configure XAMPP and phpMyAdmin
+
+1. Install XAMPP and open the **XAMPP Control Panel**.
+2. Start **Apache** and **MySQL**. The app only needs MySQL; Apache is not
+   required when using `php artisan serve`.
+3. Open `http://localhost/phpmyadmin`.
+4. Select **New**, create a database named `task_manager`, and choose
+   `utf8mb4_general_ci` (or any UTF-8 collation).
+5. In the project root, open `.env` and use these values:
+
+   ```dotenv
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=task_manager
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+   The default XAMPP MySQL installation commonly has an empty `root`
+   password. If you configured a password, put it in `DB_PASSWORD`.
+6. From the project folder run:
+
+   ```bash
+   php artisan config:clear
+   php artisan migrate
+   npm run build
+   php artisan serve
+   ```
+
+   Then visit `http://localhost:8000`, register a user, and create tasks from
+   the dashboard. The migrations create the `users`, `tasks`, sessions, cache,
+   and queue tables in `task_manager`; do not create those tables manually in
+   phpMyAdmin.
+
+If MySQL uses a different port, replace `3306` in `.env` with the port shown
+next to MySQL in XAMPP. If Laravel reports that `pdo_mysql` is missing, enable
+the `extension=pdo_mysql` line in the PHP `php.ini` used by the terminal, then
+restart the terminal and run `php artisan migrate` again.
 
 ## Development Commands
 

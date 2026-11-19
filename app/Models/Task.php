@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
+
+/**
+ * @property int $id
+ * @property int|null $user_id
+ * @property string $title
+ * @property string|null $description
+ * @property string $status
+ * @property Carbon|null $due_date
+ */
+#[Fillable(['title', 'description', 'status', 'due_date'])]
+class Task extends Model
+{
+    protected function casts(): array
+    {
+        return [
+            'due_date' => 'date:Y-m-d',
+        ];
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+}
